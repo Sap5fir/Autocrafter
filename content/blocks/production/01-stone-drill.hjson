@@ -1,0 +1,28 @@
+type: drill
+category: production
+name: Andesite drill
+description: >w<
+health: 120
+size: 2
+requirements: [
+andesite/20
+]
+warmupSpeed: 0.1
+hasPower: false
+drillTime: 250
+itemCapacity: 25
+tier: 4
+liquidBoostIntensity: 1.3
+liquidCapacity: 10
+consumes: {
+coolant: {
+optional: true
+amount: 0.1
+}
+}
+squareSprite: false
+buildTime:2
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

@@ -1,0 +1,31 @@
+type: HeaterGenerator
+name: Wind mill
+heatOutput: 1
+description: >w<
+size: 2
+category: power
+hasPower:false
+requirements: [
+  copper/40
+  andesite/25
+]
+generateEffect: none
+researchCostMultiplier: 0.5
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+rotateSpeed: 2
+spinSprite: true
+suffix: -rotator
+}
+]
+}
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

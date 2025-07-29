@@ -1,0 +1,58 @@
+name: Fortification
+description: >w<
+speed: 0.5
+type: mech
+ground:true
+accel: 0.108
+drag: 0.1
+health: 845
+rotateSpeed: 3.2
+hitSize: 20
+weapons: [
+{
+recoil: 6
+name:fortification-elgun
+top:false
+loopSoundVolume: 3
+reload:100
+shootSound: laser
+shootSoundVolume: 3
+soundPitchMin: 0.7
+soundPitchMax: 1.1
+x:-15
+y:0
+mirror: true
+bullet: {
+collidesAir: true
+lifetime: 25
+collidesGround: true
+width: 15
+height: 20
+frontColor:FF9C59FF
+backColor:FF9C59FF
+speed: 4
+damage: 50
+splashDamage: 25
+splashDamageRadius: 100
+despawnHit: true
+absorbable: false
+reflectable: false
+trailWidth: 2
+trailLength: 5
+fragBullet: {
+type:LightningBulletType
+damage: 25
+lightningColor: FF9C59FF
+lightningLength: 8
+lightningLengthRand: 6
+}
+}
+}
+]
+researchCostMultiplier: 0.05
+minefloor: true
+buildSpeed: 1.2
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45

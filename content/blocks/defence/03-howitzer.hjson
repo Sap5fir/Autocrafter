@@ -1,0 +1,107 @@
+type: ItemTurret
+name:  Howitzer
+description: >w<
+heatColor: FF743DFF
+heatRequirement: 8
+maxHeatEfficiency: 2.5
+requirements: [
+wood/75
+andesite-alloy/35
+copper/45
+]
+range: 250
+health: 285
+size: 3
+category: turret
+reload: 200
+recoil: 5
+shootSound: mediumCannon
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+ammoTypes: {
+andesite-alloy: {
+collidesAir: true
+lifetime:75
+collidesGround: true
+width: 15
+height: 20
+frontColor:FF9C59FF
+backColor:FF9C59FF
+speed: 3
+damage: 100
+splashDamage: 25
+status: blasted
+statusDuration: 30
+splashDamageRadius: 100
+despawnHit: true
+absorbable: false
+reflectable: false
+trailWidth: 2
+trailLength: 5
+hitEffect: {
+type: ExplosionEffect
+smokes: 20
+sparks: 10
+waveRad: 45
+smokeRad: 70
+sparkRad: 80
+smokeStr: 10
+sparkStr: 8
+smokeLife: 120
+smokeLif: 120
+trailEffect: {
+type: shootPyraFlame
+incendChance: 0.4
+incendSpread: 4
+incendAmount: 0.3
+rangeChange: -100
+}
+}
+}
+}
+parent: core1-junk
+researchCostMultiplier: 0.05
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -move-le
+under: true
+x: 0
+y: 0
+moveX: -5
+moveY: -5
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -move-ri
+under: true
+x: 0
+y: 0
+moveX: 5
+moveY: -5
+progress: warmup
+}
+]
+}
+squareSprite: false
+consumes: {
+coolant: {
+amount: 0.1
+optional: true
+}
+}
+research: {
+parent: 01-rupture
+objectives: [
+{
+type: OnSector
+preset: Swamp
+}
+]
+}
+researchCostMultiplier: 0.05
+parent: core1-junk

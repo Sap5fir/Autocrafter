@@ -1,0 +1,48 @@
+name: "Dart"
+description: >w<
+health: 225
+hitSize: 10
+flying: true
+speed: 2
+accel: 0.4
+drag: 0.3
+weapons: [
+{
+range: 20
+loopSound: electrichum
+shootSound: missile
+reload: 25
+recoil: 0
+mirror: false
+rotate: false
+y:5
+x:0
+bullet: {
+sprite:autocrafter-triangle
+damage: 25
+width: 5
+height: 10
+hitSize: 4
+lifetime: 50
+despawnHit: true
+speed: 2
+hitEffect: {
+type: ExplosionEffect
+smokes: 20
+sparks:0
+sparkRad:0
+smokeRad: 30
+smokeStr: 10
+smokeLife: 30
+smokeLif: 30
+}
+}
+}
+]
+commands: [move, mine, repair, rebuild]
+buildSpeed: 0.15
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45
+faceTarget: true

@@ -1,0 +1,77 @@
+type: ItemTurret
+name:  Rupture
+description: >w<
+heatColor: FF743DFF
+heatRequirement: 2
+maxHeatEfficiency: 2.5
+requirements: [
+andesite/85
+wood/35
+copper/75
+]
+range: 180
+health: 285
+size: 3
+category: turret
+reload: 200
+recoil: 5
+shootSound: laser
+chargeSound: lasercharge
+chargeEffect: lancerLaserChargeBegin
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+ammoTypes: {
+andesite: {
+sprite:autocrafter-01-rupture-cogbullet
+shootSound: blaster
+colorFront:8E665CFF
+colorBack:8E665CFF
+damage: 45
+dispawnHit:true
+status: slow
+statusDuration: 90
+speed: 3
+lifetime: 60
+width: 12
+height: 12
+pierce: true
+pierceCap: 3
+}
+}
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -dulo
+x: 0
+y: 0
+moveX: 0
+moveY: 5
+progress: warmup
+under: true
+}
+{
+type: RegionPart
+suffix: -cog
+x: 0
+y: -3
+moveX: 0
+moveY: 5
+progress: warmup
+under: true
+}
+]
+}
+squareSprite: false
+consumes: {
+coolant: {
+amount: 0.1
+optional: true
+}
+}
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

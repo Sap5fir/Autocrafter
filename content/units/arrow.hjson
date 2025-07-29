@@ -1,0 +1,94 @@
+name: "Arrow"
+description: >w<
+health: 425
+hitSize: 15
+flying: true
+speed: 2
+accel: 0.4
+drag: 0.3
+weapons: [
+{
+range: 20
+loopSound: electrichum
+shootSound: missile
+reload: 25
+recoil: 0
+mirror: true
+rotate: false
+y:5
+x:5
+bullet: {
+sprite:autocrafter-triangle
+damage: 35
+width: 5
+height: 10
+hitSize: 4
+lifetime: 50
+despawnHit: true
+speed: 2
+hitEffect: {
+type: ExplosionEffect
+smokes: 20
+sparks:0
+sparkRad:0
+smokeRad: 30
+smokeStr: 10
+smokeLife: 30
+smokeLif: 30
+}
+}
+}
+{
+range: 20
+loopSound: electrichum
+shootSound: missile
+reload: 75
+recoil: 0
+mirror: true
+rotate: false
+y:0
+x:0
+bullet: {
+type: boltBulletType
+trailWidth: 1
+trailLength: 3
+damage: 50
+width: 5
+height: 15
+frontColor:FF743DFF
+hitSize: 4
+lifetime: 40
+despawnEffect: none
+speed: 4
+shootEffect: {
+type: waveEffect
+strFrom: 0
+strTo: 0
+sizeFrom: 0
+sizeTo: 20
+colorFrom: FF743DFF
+colorTo: FF743DFF
+sides: 10
+lifetime: 30
+}
+hitEffect: {
+type: ExplosionEffect
+smokes: 20
+sparks:0
+sparkRad:0
+smokeRad: 30
+smokeStr: 10
+smokeLife: 30
+smokeLif: 30
+}
+}
+}
+]
+commands: [move, mine, repair, rebuild]
+buildSpeed: 0.15
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45
+faceTarget: true
+jetSize:3

@@ -1,0 +1,58 @@
+type: ItemTurret
+name:  Sniper
+description: >w<
+heatColor: FF743DFF
+heatRequirement: 4
+maxHeatEfficiency: 2.5
+requirements: [
+andesite/85
+zinc/75
+copper/25
+]
+targetAir:true
+targetGround:false
+range: 350
+health: 285
+size: 3
+category: turret
+reload: 200
+recoil: 5
+shootSound: laser
+chargeSound: lasercharge
+chargeEffect: lancerLaserChargeBegin
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+ammoTypes: {
+zinc: {
+type: LaserBulletType
+colors: [CBDA7FFF, CBDA7FFF, CBDA7FFF]
+length: 365
+width: 10
+damage: 25
+chargeEffect: lightningCharge
+}
+}
+drawer: {
+type: DrawTurret
+parts: [
+]
+}
+squareSprite: false
+consumes: {
+coolant: {
+amount: 0.1
+optional: true
+}
+}
+parent: core1-junk
+research: {
+parent: 01-rupture
+objectives: [
+{
+type: SectorComplited
+preset: LandingSite
+}
+]
+}
+researchCostMultiplier: 0.05

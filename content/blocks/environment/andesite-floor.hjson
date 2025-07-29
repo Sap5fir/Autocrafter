@@ -1,0 +1,5 @@
+type: Floor
+name:Andesite
+variants: 3
+itemDrop: andesite
+playerUnmineable: false

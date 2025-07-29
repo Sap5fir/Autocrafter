@@ -1,0 +1,18 @@
+type: Router
+name: Andesite router
+description: >w<
+size: 1
+speed: 3
+health: 70
+itemCapacity: 5
+requirements: [
+andesite/5
+]
+squareSprite: true
+category: distribution
+researchCostMultiplier: 0.5
+research: {
+parent: andesite-duct
+}
+researchCostMultiplier: 0.05
+

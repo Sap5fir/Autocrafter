@@ -1,0 +1,15 @@
+health: 1850
+name: Reinforced copper wall
+description: Protective wall.Has small health but bigger than original.
+type: Wall
+buildTime: 40
+size: 2
+category: defense
+requirements: [
+copper/18
+andesite/15
+]
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

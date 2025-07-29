@@ -1,0 +1,56 @@
+type: HeaterGenerator
+name: Small steam engine
+heatOutput: 4
+description: >w<
+size: 2
+category: power
+hasPower:false
+requirements: [
+  copper/65
+  andesite-alloy/25
+]
+consumes: {
+items:[
+wood/2
+]
+liquids:[
+water/0.3
+]
+}
+generateEffect: vapor
+researchCostMultiplier: 0.5
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+    {
+      type: DrawPistons
+      suffix: -piston-alt
+      sinMag: 2
+      sinScl: 3
+    }
+    {
+      type: DrawPistons
+      suffix: -piston
+      sinMag: 2
+      sinScl: 3
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+]
+}
+parent: core1-junk
+research: {
+parent: 01-wind-mill
+objectives: [
+{
+type: OnSector
+preset: Lakes
+}
+]
+}
+researchCostMultiplier: 0.05

@@ -1,0 +1,56 @@
+name: Plate
+description: >w<
+speed: 1
+type: mech
+ground:true
+accel: 0.108
+drag: 0.1
+health: 325
+rotateSpeed: 3.2
+hitSize: 10
+weapons: [
+{
+recoil:-3
+name:plate-flamegun
+top:false
+loopSoundVolume: 3
+reload:50
+shootSound: shootAlt
+shootSoundVolume: 3
+soundPitchMin: 0.7
+soundPitchMax: 1.1
+x:-6
+y:0
+mirror: true
+bullet: {
+width: 0.001
+shootEffect: shootPyraFlame
+height: 0.001
+hitSize: 20
+damage: 18
+splashDamage: 3
+splashDamageRadius: 20
+buildingDamageMultiplier: 0.3
+pierce: true
+pierceBuilding: true
+speed: 2
+lifetime: 25
+drag: 0.045
+status: melting
+statusDuration: 200
+despawnEffect: none
+hitEffect: fireHit
+incendChance: 0.4
+incendSpread: 4
+incendAmount: 0.3
+rangeChange: -100
+}
+}
+]
+researchCostMultiplier: 0.05
+minefloor: true
+buildSpeed: 1.2
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45

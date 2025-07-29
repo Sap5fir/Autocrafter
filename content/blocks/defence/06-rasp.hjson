@@ -1,0 +1,62 @@
+type: ItemTurret
+name:  Rasp
+description: >w<
+ammoUseEffect: casing2Double
+heatColor: FF743DFF
+heatRequirement: 6
+maxHeatEfficiency: 2.5
+requirements: [
+wood/85
+andesite/65
+iron/125
+]
+range: 180
+health: 525
+size: 4
+category: turret
+reload: 35
+recoil: 5
+shootSound: laser
+chargeSound: lasercharge
+chargeEffect: lancerLaserChargeBegin
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+ammoTypes: {
+iron: {
+shootSound: blaster
+colorFront:8E665CFF
+colorBack:8E665CFF
+damage: 125
+dispawnHit:true
+speed: 5
+lifetime: 40
+width: 12
+height: 20
+}
+}
+shoot: {
+shots: 2
+type: ShootAlternate
+barrels: 2
+spread: 10
+shotDelay: 25
+}
+squareSprite: false
+consumes: {
+coolant: {
+amount: 0.1
+optional: true
+}
+}
+research: {
+parent: 04-splitter
+objectives: [
+{
+type: OnSector
+preset: Magnasia
+}
+]
+}
+researchCostMultiplier: 0.05
+parent: core1-junk

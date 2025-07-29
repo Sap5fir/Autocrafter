@@ -1,0 +1,41 @@
+name: Bloodshed
+description: >w<
+speed: 1.25
+type: mech
+ground:true
+accel: 0.108
+drag: 0.1
+health: 235
+rotateSpeed: 3.2
+hitSize: 10
+weapons: [
+{
+recoil:-3
+name:core-unit-stab
+loopSoundVolume: 3
+reload:50
+shootSound: shootAlt
+shootSoundVolume: 3
+soundPitchMin: 0.7
+soundPitchMax: 1.1
+x:-6
+y:0
+mirror: true
+bullet: {
+damage: 85
+width: 0.001
+height: 0.001
+lifetime:20
+speed:1
+}
+}
+]
+researchCostMultiplier: 0.05
+minefloor: true
+buildSpeed: 1.2
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45
+boostMultiplier: 0.85
+canBoost: true

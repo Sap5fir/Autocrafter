@@ -1,0 +1,18 @@
+type: Conduit
+name: Copper pipe
+description: Pipe for transporting liquids.
+category: liquid
+health: 75
+leaks: true
+underBullets: true
+liquidPressure: 1
+liquidCapacity: 50
+placebleLiquid: true
+requirements: [
+copper/1
+]
+bridgeReplacement:copper-liquidBridge
+research: {
+parent: 01-mech-pump
+}
+researchCostMultiplier: 0.05

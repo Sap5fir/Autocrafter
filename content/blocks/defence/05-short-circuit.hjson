@@ -1,0 +1,86 @@
+type: PowerTurret
+name:  Short circuit
+description: >w<
+heatColor: FF743DFF
+requirements: [
+andesite/85
+wood/35
+copper/75
+]
+range: 250
+health: 285
+size: 3
+category: turret
+reload: 100
+recoil: 5
+shootSound: mediumCannon
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+shootType: {
+type:LightningBulletType
+damage: 25
+lightningColor: d9b45f
+lightningLength: 20
+lightningLengthRand: 18
+}
+shoot: {
+shots: 12
+type: ShootAlternate
+barrels: 3
+spread: 5
+shotDelay: 0
+}
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -move-le
+under: true
+x: 0
+y: 0
+moveX: -2
+moveY: 2
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -move-ri
+under: true
+x: 0
+y: 0
+moveX: 2
+moveY: 2
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -move-mi
+under: true
+x: 0
+y: 0
+moveY: 2
+progress: warmup
+}
+]
+}
+squareSprite: false
+consumes: {
+power: 2
+coolant: {
+amount: 0.1
+optional: false
+}
+}
+research: {
+parent: 01-rupture
+objectives: [
+{
+type: OnSector
+preset: Magnasia
+}
+]
+}
+researchCostMultiplier: 0.05
+parent: core1-junk

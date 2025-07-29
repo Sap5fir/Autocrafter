@@ -1,0 +1,15 @@
+type: Conveyor
+name: Andesite duct
+description: Slow duct for transporting items.
+category: distribution
+speed: 0.07
+health: 25
+requirements: [
+andesite/1
+]
+junctionReplacement:andesite-junction
+bridgeReplacement:andesite-bridge
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

@@ -1,0 +1,30 @@
+type: HeatConductor
+name: Cog
+description: >w< 
+size: 1
+category: distribution
+requirements: [
+  wood/5
+  andesite/10
+]
+regionRotated1: 1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      rotateSpeed: 2
+      spinSprite: true
+      suffix: -rotator
+    }
+
+  ]
+}
+research: {
+parent: 01-wind-mill
+}
+researchCostMultiplier: 0.05
+parent:core1-junk

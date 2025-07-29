@@ -1,0 +1,15 @@
+description: ...
+captureWave: 15
+planet:planet1-eldra
+sector: 15
+difficulty: 1
+research: {
+	parent: LandingSite
+	objectives: [
+		{
+			type: SectorComplete
+			preset: LandingSite
+		}
+	]
+}
+parent: LandingSite

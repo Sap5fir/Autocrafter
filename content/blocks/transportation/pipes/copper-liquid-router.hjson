@@ -1,0 +1,18 @@
+type: LiquidRouter
+name: Copper liquid router
+description: Distributes inputted liquids to three outputs equally.
+size: 1
+solid: false
+underBullets: true
+health: 100
+liquidCapacity: 30
+category: liquid
+squareSprite: true
+research: pipe
+requirements: [
+copper/20
+]
+research: {
+parent: copper-pipe
+}
+researchCostMultiplier: 0.05

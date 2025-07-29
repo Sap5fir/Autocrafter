@@ -1,0 +1,121 @@
+type: ItemTurret
+name:  Splitter
+description: >w<
+heatColor: FF743DFF
+heatRequirement: 3
+maxHeatEfficiency: 2.5
+requirements: [
+andesite/85
+wood/35
+copper/75
+]
+range: 125
+health: 285
+size: 3
+category: turret
+reload: 150
+recoil: 5
+shootSound: mediumCannon
+chargeSound: lasercharge
+chargeEffect: lancerLaserChargeBegin
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+ammoPerShot: 2
+ammoTypes: {
+copper: {
+damage: 60
+status: blasted
+statusDuration: 120
+speed: 6
+lifetime: 25
+inaccuracy: 30
+incendChance: 0.2
+incendSpread: 3
+incendAmount: 0.2
+alternate:true
+frontColor:d9b45f
+frontBack:d9b45f
+trailWidth: 2
+trailLength: 5
+width: 15
+height:15
+despawnHit: true
+drag: 0.02
+collidesAir: true
+status: blasted
+fragBullets: 5
+}
+zinc: {
+damage: 80
+status: blasted
+statusDuration: 120
+speed: 6
+lifetime: 25
+inaccuracy: 30
+incendChance: 0.2
+incendSpread: 3
+incendAmount: 0.2
+alternate:true
+frontColor:CBDA7FFF
+frontBack:CBDA7FFF
+trailColor: CBDA7FFF
+trailWidth: 2
+trailLength: 5
+width: 15
+height:15
+despawnHit: true
+drag: 0.02
+collidesAir: true
+status: blasted
+fragBullets: 5
+}
+}
+parent: core1-junk
+researchCostMultiplier: 0.05
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -move-le
+under: true
+x: 0
+y: 0
+moveX: -5
+moveY: -1
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -move-ri
+under: true
+x: 0
+y: 0
+moveX: 5
+moveY: -1
+progress: warmup
+}
+]
+}
+squareSprite: false
+consumes: {
+coolant: {
+amount: 0.1
+optional: true
+}
+}
+shoot: {
+shots: 10
+shotDelay: 0
+}
+research: {
+parent: 03-howitzer
+objectives: [
+{
+type: SectorComplite
+preset: Swamp
+}
+]
+}
+researchCostMultiplier: 0.05
+parent: core1-junk

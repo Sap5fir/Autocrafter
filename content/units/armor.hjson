@@ -1,0 +1,94 @@
+name: Armor
+description: >w<
+speed: 0.8
+type: mech
+ground:true
+accel: 0.108
+drag: 0.1
+health: 535
+rotateSpeed: 3.2
+hitSize: 15
+weapons: [
+{
+recoil: 3
+name:armor-flamegun
+top:false
+loopSoundVolume: 3
+reload:100
+shootSound: shootAlt
+shootSoundVolume: 3
+soundPitchMin: 0.7
+soundPitchMax: 1.1
+x:-10
+y:0
+mirror: false
+bullet: {
+collidesAir: true
+lifetime: 25
+collidesGround: true
+width: 15
+height: 20
+frontColor:FF9C59FF
+backColor:FF9C59FF
+speed: 3
+damage: 35
+splashDamage: 25
+splashDamageRadius: 100
+despawnHit: true
+absorbable: false
+reflectable: false
+trailWidth: 2
+trailLength: 5
+fragBullet: {
+width: 0.001
+shootEffect: shootPyraFlame
+height: 0.001
+hitSize: 20
+damage: 18
+splashDamage: 3
+splashDamageRadius: 20
+buildingDamageMultiplier: 0.3
+pierce: true
+pierceBuilding: true
+speed: 2
+lifetime: 25
+drag: 0.045
+status: melting
+statusDuration: 200
+despawnEffect: none
+hitEffect: fireHit
+incendChance: 0.4
+incendSpread: 4
+incendAmount: 0.3
+rangeChange: -100
+}
+}
+}
+{
+recoil:-6
+name:armor-stab
+loopSoundVolume: 3
+reload:50
+shootSound: shootAlt
+shootSoundVolume: 3
+soundPitchMin: 0.7
+soundPitchMax: 1.1
+x:10
+y:0
+mirror: false
+bullet: {
+damage: 85
+width: 0.001
+height: 0.001
+lifetime:30
+speed:1
+}
+}
+]
+researchCostMultiplier: 0.05
+minefloor: true
+buildSpeed: 1.2
+mineSpeed: 4
+minePower: 1
+mineTier: 1
+itemCapacity: 45

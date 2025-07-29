@@ -1,0 +1,29 @@
+type: HeatConductor
+name: Big cog
+description: >w< 
+size: 2
+category: distribution
+requirements: [
+  wood/10
+  andesite/25
+]
+regionRotated1: 3
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      rotateSpeed: 3
+      spinSprite: true
+      suffix: -rotator
+    }
+
+  ]
+}
+research: {
+parent: cog
+}
+researchCostMultiplier: 0.05

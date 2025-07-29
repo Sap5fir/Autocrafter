@@ -1,0 +1,15 @@
+type: Junction
+name: Andesite junction
+description: Allows for crossing two ducts. 
+health: 65
+size: 1
+speed: 3
+requirements: [
+andesite/10
+]
+squareSprite: false
+category: distribution
+research: {
+parent: andesite-duct
+}
+researchCostMultiplier: 0.05

@@ -1,0 +1,50 @@
+type: AttributeCrafter
+name: Iron crusher
+description: >w<
+size: 3
+category: production
+attribute: oil
+displayEfficiencyScale: 1
+baseEfficiency: 0
+minEfficiency: 9
+maxBoost: 1.25
+requirements: [
+andesite-alloy/35
+wood/45
+zinc/65
+]
+consumes:{
+liquids:[
+water/1
+]
+}
+itemCapacity: 50
+liquidCapacity: 50
+squareSprite: false
+craftTime: 200
+outputItem: iron/1
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+spinSprite: true
+suffix: -rotator
+}
+]
+}
+research: {
+parent: 01-stone-drill
+objectives: [
+{
+type: OnSector
+preset: Magnasia
+}
+]
+}
+researchCostMultiplier: 0.05
+parent: core1-junk

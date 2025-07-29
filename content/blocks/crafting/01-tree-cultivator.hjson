@@ -1,0 +1,44 @@
+type: HeatCrafter
+name: Tree cultivator
+description: >w<
+size: 2
+heatRequirement: 2
+maxHeatEfficiency: 2
+squareSprite: false
+displayEfficiencyScale: 1
+hasPower: true
+hasLiquids: true
+craftTime: 85
+consumes: {
+liquids:[
+water/0.4
+]
+}
+requirements: [
+andesite/30
+copper/25
+]
+updateEffect: smeltsmoke
+category: crafting
+idleSoundVolume:0.5
+itemCapacity: 21
+outputItems:[
+wood/2
+]
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawLiquidRegion
+drawLiquid: water
+suffix: -liquid
+}
+]
+}
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

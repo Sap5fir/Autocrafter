@@ -1,0 +1,37 @@
+name: Mecanical pump
+description: Slowly pumps out liquids under itself.
+category: liquid
+type: pump
+research: {
+}
+size: 2
+pumpAmount: 0.2
+liquidCapacity: 5
+placeableLiquid: true
+requirements: [
+copper/25
+]
+squareSprite: false
+researchCostMultiplier: 0.05
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+rotateSpeed: 3
+spinSprite: true
+suffix: -rotator
+}
+{
+type: DrawRegion
+suffix: -top
+}
+]
+}
+research: {
+parent: core1-junk
+}
+researchCostMultiplier: 0.05

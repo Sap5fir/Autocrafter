@@ -1,0 +1,14 @@
+description: ...
+captureWave: 30
+planet:planet1-eldra
+sector: 23
+difficulty: 2
+research: {
+	parent: Lakes
+	objectives: [
+		{
+			type: SectorComplete
+			preset: Lakes
+		}
+	]
+}

@@ -1,0 +1,17 @@
+type: LiquidBridge
+name: Copper liquid bridge
+description: Transports liquids above buildings.
+health:125
+fadeIn: false
+arrowSpacing: 6
+range: 5
+category: liquid
+research: pipe
+requirements: [
+copper/25
+andesite/15
+]
+research: {
+parent: copper-pipe
+}
+researchCostMultiplier: 0.05

@@ -1,0 +1,24 @@
+type: PowerNode
+name: Wiring kit
+description: Connects two buildings with wire.
+size: 1
+health: 15
+squareSprite: false
+laserRange: 8
+maxNodes: 5
+requirements: [
+iron/5
+copper/10
+]
+category: power
+parent: core1-junk
+research: {
+parent: 01-b-dynamo-machine
+objectives: [
+{
+type: OnSector
+preset: Magnasia
+}
+]
+}
+researchCostMultiplier: 0.05

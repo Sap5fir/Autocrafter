@@ -1,0 +1,49 @@
+type: HeatCrafter
+name: Brass mixer
+description: >w<
+size: 3
+heatRequirement: 6
+maxHeatEfficiency: 2
+squareSprite: false
+displayEfficiencyScale: 1
+hasPower: true
+hasLiquids: true
+craftTime: 85
+consumes: {
+power:0.5
+items:[
+zinc/1
+copper/1
+]
+}
+requirements: [
+andesite/50
+copper/45
+wood/35
+]
+updateEffect: smeltsmoke
+category: crafting
+idleSoundVolume:0.5
+itemCapacity: 21
+outputItems:[
+brass/1
+]
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+spinSprite: true
+suffix: -rotator
+}
+{
+type: DrawRegion
+suffix: -top
+}
+]
+}
+researchCostMultiplier: 0.05

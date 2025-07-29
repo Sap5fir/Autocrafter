@@ -1,0 +1,7 @@
+type: floor
+name:Autocrafter|Ferric stone (Iron)
+variants: 4
+attributes: {
+oil: 1
+}
+

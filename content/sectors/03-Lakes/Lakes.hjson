@@ -1,0 +1,14 @@
+description: ...
+captureWave: 20
+planet:planet1-eldra
+sector: 16
+difficulty: 1
+research: {
+	parent: LandingSite
+	objectives: [
+		{
+			type: SectorComplete
+			preset: Swamp
+		}
+	]
+}

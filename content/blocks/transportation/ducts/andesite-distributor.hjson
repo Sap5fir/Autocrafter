@@ -1,0 +1,17 @@
+type: Router
+name: Andesite distributor
+description: >w<
+size: 2
+speed: 3
+health: 70
+itemCapacity: 5
+requirements: [
+andesite/10
+copper/8
+]
+squareSprite: true
+category: distribution
+research: {
+parent: andesite-router
+}
+researchCostMultiplier: 0.05
